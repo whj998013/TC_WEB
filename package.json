@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "init": "webpack --progress --config webpack.dev.config.js",
-    "dev": "webpack-dev-server --content-base ./ --open --inline --hot --compress --history-api-fallback --config webpack.dev.config.js",
+    "dev": "webpack-dev-server --content-base ./ --open --inline --hot --compress --history-api-fallback  --port 7080 --host 0.0.0.0  --config webpack.dev.config.js",
     "build": "webpack --progress --hide-modules --config webpack.prod.config.js"
   },
   "repository": {
@@ -15,7 +15,7 @@
   "author": "Aresn",
   "license": "MIT",
   "dependencies": {
-    "view-design": "^4.0.0",
+    "view-design": "^4.4.0",
     "vue": "^2.5.16",
     "vue-router": "^2.8.1"
   },
@@ -35,6 +35,7 @@
     "iview-loader": "^1.2.1",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
+    "node-sass": "^5.0.0",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "vue-hot-reload-api": "^1.3.3",
@@ -43,7 +44,7 @@
     "vue-style-loader": "^1.0.0",
     "vue-template-compiler": "^2.2.1",
     "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.4.1",
+    "webpack-dev-server": "^2.11.5",
     "webpack-merge": "^3.0.0"
   },
   "bugs": {
